@@ -1,30 +1,80 @@
-<div class="projects-grid">
-  <div class="project-card">
-    <div class="project-image">
-      <img src="portfolio/cover.jpeg" alt="Cover" style="width:100%; height:230px; object-fit:cover;">
-    </div>
-    <div class="project-content">
-      <h3>Cover</h3>
-      <p>Project description here.</p>
-    </div>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wenyu Lin's Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="heading">
+    <h1>Wenyu Lin's Portfolio</h1>
   </div>
-  <div class="project-card">
-    <div class="project-image">
-      <img src="portfolio/digitalwork.PNG" alt="Digital Work" style="width:100%; height:230px; object-fit:cover;">
-    </div>
-    <div class="project-content">
-      <h3>Digital Work</h3>
-      <p>Project description here.</p>
-    </div>
-  </div>
-  <div class="project-card">
-    <div class="project-image">
-      <img src="portfolio/laundry1.JPG" alt="Laundry 1" style="width:100%; height:230px; object-fit:cover;">
-    </div>
-    <div class="project-content">
-      <h3>Laundry 1</h3>
-      <p>Project description here.</p>
-    </div>
-  </div>
-</div>
 
+  <div id="linkDiv">
+    <button class="navLinks" data-target="portfolioSection">Portfolio</button>
+    <button class="navLinks" data-target="aboutSection">About</button>
+    <button class="navLinks" data-target="contactSection">Contact</button>
+  </div>
+
+  <section id="portfolioSection">
+    <ul id="portfolioList">
+      <li>
+        <button class="portfolioLinks" data-gallery="paintings">
+          <img src="https://github.com/wenyulin-11/Fall2025demo/blob/main/light.jpg?raw=true" alt="Paintings">
+          <span>Light</span>
+        </button>
+      </li>
+      <li>
+        <button class="portfolioLinks" data-gallery="drawings">
+          <img src="https://github.com/wenyulin-11/Fall2025demo/blob/main/IMG_0613.jpg?raw=true" alt="Eye">
+          <span>Eye</span>
+        </button>
+      </li>
+      <li>
+        <button class="portfolioLinks" data-gallery="older">
+          <img src="https://github.com/wenyulin-11/Fall2025demo/blob/main/IMG_0614.jpg?raw=true" alt="Older Work">
+          <span>untitled</span>
+        </button>
+      </li>
+      <li>
+        <button class="portfolioLinks" data-gallery="studies">
+          <img src="https://github.com/wenyulin-11/Fall2025demo/blob/main/IMG_0617.jpg?raw=true" alt="Studies">
+          <span>Tree</span>
+        </button>
+      </li>
+      <li>
+        <button class="portfolioLinks" data-gallery="Sculptures">
+          <img src="https://github.com/wenyulin-11/Fall2025demo/blob/main/art193.jpg?raw=true" alt="Sculptures">
+          <span>Sculptures</span>
+        </button>
+      </li>
+     
+    </ul>
+  </section>
+
+  <section id="aboutSection">
+    <h2>About</h2>
+    <p>
+      Wenyu Lin is a digital media artist based in the Bay Area, specializing in digital and video art. 
+      His work explores the dynamic interplay between abstract forms of expression and digital media, 
+      that transforms ideas into visuals. Through his artworks, Wenyu aims to capture and convey emotions, 
+      and personal experiences.
+    </p>
+  </section>
+
+  <section id="contactSection">
+    <h2>Contact</h2>
+    <p>Email: <strong>Wenyu.lin@sjsu.edu</strong></p>
+  </section>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="light-box">
+    <button class="close">&times;</button>
+    <img id="mainImage">
+    <div class="thumbs" id="thumbsContainer"></div>
+  </div>
+
+  <script src="portfolio.js"></script>
+</body>
+</html>
