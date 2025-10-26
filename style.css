@@ -8,6 +8,7 @@ body {
 }
 
 h1 {
+  
     font-family: 'Courier New';
     margin: 30px 0 10px;
     font-weight: 400;
@@ -16,7 +17,7 @@ h1 {
 #linkDiv {
     display: flex;
     justify-content: center;
-    padding: 15px;
+    padding: 10px;
     border-bottom: 1px solid #eee;
     background: #fff;
 }
@@ -40,14 +41,15 @@ section {
     padding: 40px 20px;
 }
 
-/* Portfolio 样式 */
+/* Portfolio */
 #portfolioList {
     list-style: none;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 300px;
     padding: 0;
+  
 }
 
 .portfolioLinks {
@@ -61,8 +63,8 @@ section {
 }
 
 .portfolioLinks img {
-    width: 250px;
-    height: 250px;
+    width:  300px;
+    height: 300px;
     object-fit: cover;
     border-radius: 6px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
@@ -70,7 +72,7 @@ section {
 }
 
 .portfolioLinks:hover img {
-    transform: scale(1.05);
+    transform: scale(1.25);
 }
 
 .portfolioLinks span {
@@ -82,9 +84,9 @@ section {
     text-align: center;
 }
 
-/* ------new---- Lightbox ---------- */
+/* Lightbox css */
 .light-box {
-  display: none; /* 默认隐藏 */
+  display: none; 
   position: fixed;
   top: 0;
   left: 0;
@@ -137,3 +139,25 @@ section {
   transform: scale(1.1);
 }
 
+/* all Courier New front */
+body, h1, h2, h3, p, button, span, li {
+    font-family: 'Courier New', monospace !important;
+    letter-spacing: 0.5px;
+}
+#imageDescription {
+  color: #fff;              
+  margin-top: 15px;
+  max-width: 70%;            
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  font-family: 'Courier New', monospace; 
+  opacity: 0.9;
+}
+
+#heading img {
+    width: 100px;
+    height: 100px;
+    margin-top: 40px; 
+    vertical-align: middle;
+}
