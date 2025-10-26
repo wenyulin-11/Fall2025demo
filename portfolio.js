@@ -2,7 +2,7 @@ window.onload = function() {
     const sections = document.querySelectorAll('section');
     const navLinks = document.querySelectorAll('.navLinks');
 
-    // navigation
+    // site navigation
     navLinks.forEach(link => {
         link.addEventListener('click', () => {
             const target = link.getAttribute('data-target');
@@ -10,18 +10,18 @@ window.onload = function() {
         });
     });
 
-    //  section
+    // default section
     document.getElementById('portfolioSection').style.display = 'block';
 };
 
-// Lightbox
+// Lightbox elements
 const portfolioButtons = document.querySelectorAll('.portfolioLinks');
 const lightbox = document.getElementById('lightbox');
 const mainImage = document.getElementById('mainImage');
 const descriptionText = document.getElementById('imageDescription');
 const closeBtn = document.querySelector('.close');
 
-//  Lightbox open
+// 点击作品打开 Lightbox
 portfolioButtons.forEach(button => {
     button.addEventListener('click', () => {
         const img = button.querySelector('img');
